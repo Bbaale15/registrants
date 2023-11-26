@@ -1,17 +1,30 @@
 <div class="container-fluid h-100">
-  <div class="row h-100">
+  <div class="row">
+    <div class="col">
+      <div class="d-flex header">
+        <div class="p-2 flex-grow-1">
+          <h3>Registrants Dashboard</h3>
+        </div>
+        <div class="p-2">Select a District</div>
+        <div class="p-2">Select a SubCounty</div>
+        <div class="p-2">Select a Parish</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row map-container">
     <div class="col h-100">
       <div class="row h-100">
-        <div class="col-md-9 h-100 pt-3 pb-3">
+        <div class="col-md-9 h-100 py-2">
           <ng-container *ngIf="chartOptions">
             <highcharts-chart id="container" [Highcharts]="Highcharts" [constructorType]="chartConstructor"
               [options]="chartOptions" style="width: 100%; height: 100%; display: block;">
             </highcharts-chart>
           </ng-container>
         </div>
-        <div class="col-md-3 h-100 pt-3 pb-3">
-          <div class="registrants-details h-100">
-            Registrants Details
+        <div class="col-md-3 h-100 py-2 ps-0">
+          <div class="registrants-details h-100 p-2">
+            <h3>Registrants Details</h3>
           </div>
         </div>
       </div>

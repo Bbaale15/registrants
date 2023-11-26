@@ -44,10 +44,10 @@ export class AppComponent implements OnInit {
         map: topology,
       },
       title: {
-        text: 'Highmaps basic demo',
+        text: 'Registrants Location',
       },
       subtitle: {
-        text: 'Source map: Registrants',
+        text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/ug/ug-all.topo.json">Uganda</a>',
       },
       mapNavigation: {
         enabled: true,

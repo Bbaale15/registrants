@@ -1,3 +1,17 @@
 .registrants-details {
   background-color: #fff;
 }
+
+.header {
+  background-color: #fff;
+  height: 3.5rem;
+  margin-top: 0.5rem;
+
+  div {
+    border-right: 1px solid #ddd;
+  }
+}
+
+.map-container {
+  height: calc(100% - 70px);
+}
